@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color:blue;
+    color: cornsilk;
+    padding: 30px 50px;
+}
+
+.header-left {
+    text-align: end;
+}
+
+.header-vowel {
+    color: orange;
+}
+
+.header-button {
+    display: block;
+    margin: 10px 0 10px auto;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(173, 216, 230, 0.8);
+}
+
+.header-image {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
