@@ -1,9 +1,15 @@
+import React, { useState } from 'react' 
+import ProjectCard from './ProjectCard'
 import './ProjectDisplay.css'
 
 export const ProjectDisplay = () => {
+
     return (
-        <div className="ProjectDisplay">
+        <div className="project-display">
             <h1>Project Display Area</h1>
+            <div>
+                <ProjectCard />
+            </div>
         </div>
     )
 };
