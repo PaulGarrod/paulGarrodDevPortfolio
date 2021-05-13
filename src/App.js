@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 export const App = () => {
 
-  let navbarLinks = ["Home", "Projects", "About", "Contact", "Resume"];
+  let navbarLinks = ["About", "Contact"];
 
   return (
     <div className="App">
