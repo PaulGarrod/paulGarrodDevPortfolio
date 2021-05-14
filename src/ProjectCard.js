@@ -1,6 +1,26 @@
 import React, { useState } from "react";
 import './ProjectCard.css'
 
+// to include when sites are finished!
+
+// {
+//     title: 'JS for Kids',
+//     image: 'Shiny image incoming',
+//     tech: 'JavaScript',
+//     readMe: 'JS for Kids my read me, for your please.',
+//     desc: 'JS for Kids my Desc for our pleasure.',
+//     github: 'https://github.com/PaulGarrod/JSForKids',
+//     website: '#'
+// }, {
+//     title: 'Dive Guide',
+//     image: 'Shiny image incoming',
+//     tech: 'JavaScript',
+//     readMe: 'DIVE GUIDE my read me, for your please.',
+//     desc: 'DIVE GUIDE my Desc for our pleasure.',
+//     github: 'https://github.com/PaulGarrod/Koh-Tao-Dive-Guide',
+//     website: '#'
+// }
+
 export const ProjectCard = () => {
 
     const project = [{
@@ -13,7 +33,7 @@ export const ProjectCard = () => {
         website: 'https://uk-covid-data.netlify.app/'
     }, {
         title: 'To Do Application',
-        image: 'Shiny image incoming',
+        image: 'todoAppNoBG.png',
         tech: 'JQuery',
         readMe: 'TODO my read me, for your please.',
         desc: 'TODO my Desc for our pleasure.',
@@ -21,20 +41,12 @@ export const ProjectCard = () => {
         website: 'https://paulgarrod-todolist.netlify.app/'
     }, {
         title: 'Weather Search',
-        image: 'Shiny image incoming',
+        image: 'weatherAppNoBG.png',
         tech: 'JavaScript',
         readMe: 'WEATHER my read me, for your please.',
         desc: 'WEATHER my Desc for our pleasure.',
         github: 'https://github.com/PaulGarrod/weatherApp2',
         website: 'https://current-weather-search.netlify.app/'
-    }, {
-        title: 'Dive Guide',
-        image: 'Shiny image incoming',
-        tech: 'JavaScript',
-        readMe: 'DIVE GUIDE my read me, for your please.',
-        desc: 'DIVE GUIDE my Desc for our pleasure.',
-        github: 'https://github.com/PaulGarrod/Koh-Tao-Dive-Guide',
-        website: '#'
     }, {
         title: 'Card Battle',
         image: 'Shiny image incoming',
@@ -45,20 +57,12 @@ export const ProjectCard = () => {
         website: 'https://rock-singer-battle.netlify.app/'
     }, {
         title: 'Reddit Clone',
-        image: 'Shiny image incoming',
+        image: 'redditCloneNoBG.png',
         tech: 'HTML & CSS',
         readMe: 'Reddit Clone my read me, for your please.',
         desc: 'Reddit CloneE my Desc for our pleasure.',
         github: 'https://github.com/PaulGarrod/redditClone',
         website: 'https://reddit-clone-paulgarrod.netlify.app/'
-    }, {
-        title: 'JS for Kids',
-        image: 'Shiny image incoming',
-        tech: 'JavaScript',
-        readMe: 'JS for Kids my read me, for your please.',
-        desc: 'JS for Kids my Desc for our pleasure.',
-        github: 'https://github.com/PaulGarrod/JSForKids',
-        website: '#'
     }];
 
     const titleArray = project.map(i => i.title);
@@ -95,9 +99,9 @@ export const ProjectCard = () => {
             <h1>{title}</h1>
             <h3>{tech}</h3>
             <p>{desc}</p>
-            <a href={website}>Take me to this wonderful site</a> <br />
+            <a href={website}>Take me to this wonderful site</a>
             <a href={github}>Show me this well written code</a>
-            <img src={`images/projects/${image}`} />
+            <img src={`images/projects/${image}`}/>
             <p>{readMe}</p>
         </div>
     </div>

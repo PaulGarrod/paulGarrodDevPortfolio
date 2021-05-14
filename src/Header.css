@@ -1,20 +1,11 @@
-.header {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    background-color:blue;
-    color: cornsilk;
-    padding: 30px 50px;
-}
-
-.header-left {
-    text-align: end;
-}
+/* Header general */
 
 .header-vowel {
     color: orange;
 }
 
 .header-button {
+    width: fit-content;
     display: block;
     margin: 10px 0 10px auto;
     padding: 12px;
@@ -23,7 +14,42 @@
     background-color: rgba(173, 216, 230, 0.8);
 }
 
-.header-image {
+/* contact */
+
+.header-contact {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color:blue;
+    color: cornsilk;
+    padding: 30px 50px;
+}
+
+.header-contact-left {
+    text-align: end;
+}
+
+.header-contact-image {
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+
+/* about */
+
+.header-about {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color:blue;
+    color: cornsilk;
+    padding: 30px 50px;
+}
+
+.header-about-left {
+    text-align: end;
+}
+
+
+.header-about-image {
     object-fit: cover;
     height: 300px;
     width: 300px;
