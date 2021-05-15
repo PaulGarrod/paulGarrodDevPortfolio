@@ -1,56 +1,78 @@
 /* Header general */
 
-.header-vowel {
+.header-letter-color {
     color: orange;
 }
 
 .header-button {
-    width: fit-content;
-    display: block;
-    margin: 10px 0 10px auto;
-    padding: 12px;
+    background-color: inherit;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin: 15px 0;
+    /* width: 150px; */
+    height: 55px;
+    font-family: Bad Script;
+    
+    /* padding: 12px;
+    width: 300px;
+    margin: 20px auto;
     border-radius: 5px;
     border: none;
     background-color: rgba(173, 216, 230, 0.8);
+    font-family: Bad Script;
+    font-size: 1.5rem; */
 }
 
-/* contact */
-
-.header-contact {
+.header {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    background-color:blue;
-    color: cornsilk;
+    background-color:rgba(110, 110, 201, 0.432);
+    color: black;
     padding: 30px 50px;
+    font-family: 'Bad Script', cursive;
+
 }
 
-.header-contact-left {
+.header h1 {
+    margin-bottom: 0;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 85%;
+    margin-left: auto;
+}
+
+.header-left p {
+    font-family: roboto;
     text-align: end;
+    margin-bottom: 5px;
+    line-height: 2em;
 }
 
-.header-contact-image {
+.header-left h1 {
+    display: inline;
+}
+
+.header-image {
     object-fit: cover;
     height: 300px;
     width: 300px;
+    border-radius: 10px;
 }
 
-/* about */
-
-.header-about {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    background-color:blue;
-    color: cornsilk;
-    padding: 30px 50px;
-}
-
-.header-about-left {
-    text-align: end;
-}
-
-
-.header-about-image {
-    object-fit: cover;
-    height: 300px;
-    width: 300px;
+.header-icons i {
+    font-size: 3em;
+    margin-left: 30px;
+    color: rgba(173, 216, 230, 0.8);
 }

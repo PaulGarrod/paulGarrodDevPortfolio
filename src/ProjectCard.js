@@ -21,6 +21,16 @@ import './ProjectCard.css'
 //     website: '#'
 // }
 
+// , {
+//     title: 'Card Battle',
+//     image: 'Shiny image incoming',
+//     tech: 'React',
+//     readMe: 'CARD BATTLE my read me, for your please.',
+//     desc: 'CARD BATTLE my Desc for our pleasure.',
+//     github: 'https://github.com/PaulGarrod/singerFightCardGame',
+//     website: 'https://rock-singer-battle.netlify.app/'
+// }
+
 export const ProjectCard = () => {
 
     const project = [{
@@ -47,14 +57,6 @@ export const ProjectCard = () => {
         desc: 'WEATHER my Desc for our pleasure.',
         github: 'https://github.com/PaulGarrod/weatherApp2',
         website: 'https://current-weather-search.netlify.app/'
-    }, {
-        title: 'Card Battle',
-        image: 'Shiny image incoming',
-        tech: 'React',
-        readMe: 'CARD BATTLE my read me, for your please.',
-        desc: 'CARD BATTLE my Desc for our pleasure.',
-        github: 'https://github.com/PaulGarrod/singerFightCardGame',
-        website: 'https://rock-singer-battle.netlify.app/'
     }, {
         title: 'Reddit Clone',
         image: 'redditCloneNoBG.png',
@@ -92,7 +94,9 @@ export const ProjectCard = () => {
     <div className="project-card-container">
         <div className="project-card-title">
         {titleArray.map((i) => (
-            <button onClick={handleClick}>{i}</button>
+            <a href="#project-display">
+            <button className="font-med" onClick={handleClick}>{i}</button>
+            </a>
             ))}
         </div>
         <div className="project-card-display">
