@@ -99,6 +99,7 @@ export const ProjectCard = () => {
             </a>
             ))}
         </div>
+        
         <div className="project-card-display">
             <h1>{title}</h1>
             <h2>{tech}</h2>
