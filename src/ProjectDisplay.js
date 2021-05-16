@@ -6,7 +6,7 @@ export const ProjectDisplay = () => {
 
     return (
         <div className="project-display" id="project-display">
-            <h1>Project Display Area</h1>
+            <h1 class="font-large">Projects</h1>
             <div>
                 <ProjectCard />
             </div>

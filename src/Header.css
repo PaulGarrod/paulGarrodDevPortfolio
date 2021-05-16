@@ -75,6 +75,7 @@
     }
     .header-right {
         align-items: flex-end;
+        justify-content: center;
     }
 }
 
@@ -87,5 +88,8 @@
     .header-left, .header-right {
         align-items: center;
         margin: 0;
+    }
+    .header-button {
+        margin: 30px 0;
     }
 }

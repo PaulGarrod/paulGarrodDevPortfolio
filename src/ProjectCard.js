@@ -45,24 +45,24 @@ export const ProjectCard = () => {
         title: 'To Do Application',
         image: 'todoAppNoBG.png',
         tech: 'JQuery',
-        readMe: 'TODO my read me, for your please.',
-        desc: 'TODO my Desc for our pleasure.',
+        readMe: 'Using JQuery to create the application, which allows for CRUD functionality of users To Do\'s. Integrated Local Storage allowing users To Do Lists to be stored. Additional features include a flagged feature, a reorder feature and delete all feature. Flagged feature allows users to toggle an items importance on and off. Reorder feature allows users to bring their flagged items to the top of the list.',
+        desc: 'Create a To Do Application using JQuery which stores users To Do Lists.',
         github: 'https://github.com/PaulGarrod/toDoList',
         website: 'https://paulgarrod-todolist.netlify.app/'
     }, {
         title: 'Weather Search',
         image: 'weatherAppNoBG.png',
         tech: 'JavaScript',
-        readMe: 'WEATHER my read me, for your please.',
-        desc: 'WEATHER my Desc for our pleasure.',
+        readMe: 'Fetch API utilized to access the Weather DB data. Default city is set to Wellington, NZ. Search bar allows you to discover the weather in any city worldwide right now, results displayed with additional information, including temperature, fells like temperature and wind speed. Image displayed will always correspond to the weather description returned by the search results.',
+        desc: 'Create a weather search website which uses live data.',
         github: 'https://github.com/PaulGarrod/weatherApp2',
         website: 'https://current-weather-search.netlify.app/'
     }, {
         title: 'Reddit Clone',
         image: 'redditCloneNoBG.png',
         tech: 'HTML & CSS',
-        readMe: 'Reddit Clone my read me, for your please.',
-        desc: 'Reddit CloneE my Desc for our pleasure.',
+        readMe: 'Cloned Reddits website layout, responsive break points and overall fell using only HTML and CSS. Responsiveness achieved through CSS Felxbox and triggering breakpoints inline with Reddit\'s breakpoints.',
+        desc: 'Recreate the layout, responsiveness and feel of a popular website.',
         github: 'https://github.com/PaulGarrod/redditClone',
         website: 'https://reddit-clone-paulgarrod.netlify.app/'
     }];
@@ -71,8 +71,8 @@ export const ProjectCard = () => {
 
     const [title, setTitle] = useState('Paul Garrod\'s Portfolio');
     const [tech, setTech] = useState('Built using React');
-    const [readMe, setReadMe] = useState('Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display a different project.');
-    const [desc, setDesc] = useState('Using React create a simple yet effective portfolio. Additional projects will be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others');
+    const [readMe, setReadMe] = useState('Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display each project. Additional projects to be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others.');
+    const [desc, setDesc] = useState('Using React create a simple yet effective portfolio.');
     const [website, setWebsite] = useState(null);
     const [github, setGithub] = useState('#');
     const [image, setImage] = useState('#');
