@@ -1,5 +1,11 @@
 .project-display {
     background-color: #fbeceb;
     color: #002447;
-    padding: 40px 0;
+    padding: 40px 15%;
+}
+
+@media (max-width: 1200px){
+    .project-display {
+        padding: 40px 5%;
+    }
 }
