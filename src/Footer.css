@@ -1,7 +1,23 @@
 .footer {
-    background-color: cadetblue;
-    padding: 10px 0;
+    color: #feb249;
+    background-color: #002447;
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Bad Script;
+}
+
+.footer-item {
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 700px){
+    .footer-item {
+        font-size: small;
+    }
 }

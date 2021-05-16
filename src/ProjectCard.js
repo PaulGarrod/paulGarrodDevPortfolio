@@ -34,11 +34,11 @@ import './ProjectCard.css'
 export const ProjectCard = () => {
 
     const project = [{
-        title: 'UK Covid Data Visualization',
+        title: 'UK Covid Data',
         image: 'covidLaptopNoBG.png',
         tech: 'JavaScript',
         readMe: 'Fetch API used to retrieve the UK Government Covid-19 Data. Data manipulated to create relevant arrays allowing for the creation of two bar charts (created using Chart.JS). Charts data can be toggled on/ off by clicking the chart keys. Below the charts, todays data is displayed as numbers. Use the date select tool to display the data of any date available in the same format as todays date - allowing simple comparisons between two dates.',
-        desc: 'Displaying the UK Covid-19 Data in an easy to digest manner.',
+        desc: 'Displaying the UK Covid-19 Data in an easy to digest format.',
         github: 'https://github.com/PaulGarrod/UKCovidData',
         website: 'https://uk-covid-data.netlify.app/'
     }, {
@@ -69,13 +69,13 @@ export const ProjectCard = () => {
 
     const titleArray = project.map(i => i.title);
 
-    const [title, setTitle] = useState('Thanks for visiting my portfolio!');
-    const [tech, setTech] = useState('Choose a Project using the project buttons.');
-    const [readMe, setReadMe] = useState('Read Me coming soon');
-    const [desc, setDesc] = useState('Descriptin coming soon');
-    const [website, setWebsite] = useState('Website link coming soon');
-    const [github, setGithub] = useState('Github link coming soon');
-    const [image, setImage] = useState('IMG coming soon');
+    const [title, setTitle] = useState('Paul Garrod\'s Portfolio');
+    const [tech, setTech] = useState('Built using React');
+    const [readMe, setReadMe] = useState('Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display a different project.');
+    const [desc, setDesc] = useState('Using React create a simple yet effective portfolio. Additional projects will be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others');
+    const [website, setWebsite] = useState(null);
+    const [github, setGithub] = useState('#');
+    const [image, setImage] = useState('#');
     
     const handleClick = (e) => {
         const index = project.findIndex(i => i.title === e.target.innerHTML)
@@ -101,12 +101,16 @@ export const ProjectCard = () => {
         </div>
         <div className="project-card-display">
             <h1>{title}</h1>
-            <h3>{tech}</h3>
+            <h2>{tech}</h2>
             <p>{desc}</p>
-            <a href={website}>Take me to this wonderful site</a>
-            <a href={github}>Show me this well written code</a>
-            <img src={`images/projects/${image}`}/>
+            <h3>Read Me:</h3>
             <p>{readMe}</p>
+            {website !== null && (
+            <a href={website} target="_blank">
+                <img src={`images/projects/${image}`}/>
+            </a>
+            )}
+            <a href={github}>Show me this well written code</a>
         </div>
     </div>
     )

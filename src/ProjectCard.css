@@ -1,3 +1,8 @@
+.project-card-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
 .project-card-title {
     display: flex;
     flex-direction: column;
@@ -6,22 +11,12 @@
 
 .project-card-title button {
     background-color: inherit;
-    border: 0.5px solid black;
+    border: 0.5px solid #002447;
     border-radius: 8px;
     padding: 5px 15px;
-    margin: 15px 0;
-    /* width: 150px; */
+    margin: 15px 5px;
     height: 55px;
     font-family: Bad Script;
-}
-
-.project-card-display {
-    background-color: greenyellow;
-    color: black;
-}
-
-.project-card-display h1 {
-    color: green;
 }
 
 .project-card-display a {
@@ -34,8 +29,21 @@
     padding: 0 50px;
 }
 
-.project-card-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: blanchedalmond
-};
+.project-card-display img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 950px){
+    .project-card-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-card-title {
+        flex-direction: row;
+        justify-content: center;
+        font-size: small;
+        flex-wrap: wrap;
+    }
+}
