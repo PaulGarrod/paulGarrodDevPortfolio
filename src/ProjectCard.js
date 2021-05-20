@@ -74,13 +74,11 @@ export const ProjectCard = () => {
     const [readMe, setReadMe] = useState('Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display each project. Additional projects to be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others.');
     const [desc, setDesc] = useState('Using React create a simple yet effective portfolio.');
     const [website, setWebsite] = useState(null);
-    const [github, setGithub] = useState('#');
+    const [github, setGithub] = useState('https://github.com/PaulGarrod/portfolio-react');
     const [image, setImage] = useState('#');
     
     const handleClick = (e) => {
-        const index = project.findIndex(i => i.title === e.target.innerHTML)
-        console.log(e.target.innerHTML);
-        console.log(index);
+        const index = project.findIndex(i => i.title === e.target.innerHTML);
         setTitle(project[index].title);
         setTech(project[index].tech);
         setReadMe(project[index].readMe);
@@ -94,9 +92,7 @@ export const ProjectCard = () => {
     <div className="project-card-container">
         <div className="project-card-title">
         {titleArray.map((i) => (
-            <a href="#project-display">
             <button className="font-med" onClick={handleClick}>{i}</button>
-            </a>
             ))}
         </div>
         
@@ -108,7 +104,7 @@ export const ProjectCard = () => {
             <p>{readMe}</p>
             {website !== null && (
             <a href={website} target="_blank">
-                <img src={`images/projects/${image}`}/>
+                <img className="project-card-display-image" src={`images/projects/${image}`}/>
             </a>
             )}
             <a href={github}>Show me this well written code</a>

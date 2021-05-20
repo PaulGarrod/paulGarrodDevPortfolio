@@ -2,11 +2,8 @@ import React, { useState } from "react";
 import './Header.css';
 
 export const Header = () => {
-
         const [showAbout, setShowAbout] = useState(false)
-        
         const onClick = () => setShowAbout(!showAbout);
-    
         const Contact = () => (
             <div className="header">
                 <div className="header-left">
@@ -41,7 +38,7 @@ export const Header = () => {
                 <div className="header-left">
                     <h1 className="font-large">Pa<span className="header-letter-color">u</span>l Garro<span className="header-letter-color">d</span></h1>
                     <h2>Scuba Instruct<span className="header-letter-color">o</span>r | Cra<span className="header-letter-color">f</span>t B<span className="header-letter-color">e</span>er Enthusi<span className="header-letter-color">a</span>st</h2>
-                    <p>Before Web development I gaind 10 years experience managing Hospitality Businesses in the UK, Australia and NZ. With cocktail skills to light up Friday socials and barista skills to liven up the weekday mornings, I'd be a great addition to the team.</p>
+                    <p>Before Web development I gained 10 years experience managing Hospitality Businesses in the UK, Australia and NZ. With cocktail skills to light up Friday socials and barista skills to liven up the weekday mornings, I'd be a great addition to the team.</p>
                     <p>While travelling I trained as a Scuba Instructor allowing me to live and work in Asia for 4 years. I've also been known to run half marathons and brew craft beers... but only when I'm not showing off photos of my beautiful boy or exploring ship wrecks in search of lost treasure.</p>
                     <button className="header-button font-med" onClick={onClick}>Back to Business</button>
                 </div>
