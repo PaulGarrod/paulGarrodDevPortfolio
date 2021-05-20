@@ -60,13 +60,13 @@ export const ProjectCard = () => {
 
     return (
     <div className="project-card-container">
-        <div className="project-card-title">
+        <aside className="project-card-title">
         {titleArray.map((i) => (
             <button className="font-med" onClick={handleClick}>{i}</button>
             ))}
-        </div>
+        </aside>
         
-        <div className="project-card-display">
+        <article className="project-card-display">
             <h1>{title}</h1>
             <h2>{tech}</h2>
             {website !== null && (
@@ -78,7 +78,7 @@ export const ProjectCard = () => {
             <h3>Read Me:</h3>
             <p>{readMe}</p>
             <a href={github}>Show me this well written code</a>
-        </div>
+        </article>
     </div>
     )
 };
