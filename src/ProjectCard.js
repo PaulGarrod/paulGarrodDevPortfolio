@@ -69,6 +69,7 @@ export const ProjectCard = () => {
         <article className="project-card-display">
             <h1>{title}</h1>
             <h2>{tech}</h2>
+            <a href={github}>Show me the Code!</a>
             {website !== null && (
             <a href={website} target="_blank">
                 <img className="project-card-display-image" src={`images/projects/${image}`}/>
@@ -77,7 +78,6 @@ export const ProjectCard = () => {
             <p>{desc}</p>
             <h3>Read Me:</h3>
             <p>{readMe}</p>
-            <a href={github}>Show me this well written code</a>
         </article>
     </div>
     )
