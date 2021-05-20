@@ -1,36 +1,6 @@
 import React, { useState } from "react";
 import './ProjectCard.css'
 
-// to include when sites are finished!
-
-// {
-//     title: 'JS for Kids',
-//     image: 'Shiny image incoming',
-//     tech: 'JavaScript',
-//     readMe: 'JS for Kids my read me, for your please.',
-//     desc: 'JS for Kids my Desc for our pleasure.',
-//     github: 'https://github.com/PaulGarrod/JSForKids',
-//     website: '#'
-// }, {
-//     title: 'Dive Guide',
-//     image: 'Shiny image incoming',
-//     tech: 'JavaScript',
-//     readMe: 'DIVE GUIDE my read me, for your please.',
-//     desc: 'DIVE GUIDE my Desc for our pleasure.',
-//     github: 'https://github.com/PaulGarrod/Koh-Tao-Dive-Guide',
-//     website: '#'
-// }
-
-// , {
-//     title: 'Card Battle',
-//     image: 'Shiny image incoming',
-//     tech: 'React',
-//     readMe: 'CARD BATTLE my read me, for your please.',
-//     desc: 'CARD BATTLE my Desc for our pleasure.',
-//     github: 'https://github.com/PaulGarrod/singerFightCardGame',
-//     website: 'https://rock-singer-battle.netlify.app/'
-// }
-
 export const ProjectCard = () => {
 
     const project = [{
@@ -99,14 +69,14 @@ export const ProjectCard = () => {
         <div className="project-card-display">
             <h1>{title}</h1>
             <h2>{tech}</h2>
-            <p>{desc}</p>
-            <h3>Read Me:</h3>
-            <p>{readMe}</p>
             {website !== null && (
             <a href={website} target="_blank">
                 <img className="project-card-display-image" src={`images/projects/${image}`}/>
             </a>
             )}
+            <p>{desc}</p>
+            <h3>Read Me:</h3>
+            <p>{readMe}</p>
             <a href={github}>Show me this well written code</a>
         </div>
     </div>
