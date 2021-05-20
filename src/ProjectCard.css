@@ -51,5 +51,6 @@
         justify-content: center;
         font-size: small;
         flex-wrap: wrap;
+        margin-bottom: 50px;
     }
 }
