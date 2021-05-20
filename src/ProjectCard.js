@@ -75,6 +75,7 @@ export const ProjectCard = () => {
                 <img className="project-card-display-image" src={`images/projects/${image}`}/>
             </a>
             )}
+            <h3>Brief:</h3>
             <p>{desc}</p>
             <h3>Read Me:</h3>
             <p>{readMe}</p>
