@@ -4,6 +4,14 @@ import './ProjectCard.css'
 export const ProjectCard = () => {
 
     const project = [{
+        title: 'Portfolio',
+        image: 'reactPortfolioNoBG.png',
+        tech: 'React',
+        readMe: 'Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display each project. Additional projects to be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others.',
+        desc: 'Using React create a simple yet effective portfolio.',
+        github: 'https://github.com/PaulGarrod/portfolio-react',
+        website: null
+    },{
         title: 'UK Covid Data',
         image: 'covidLaptopNoBG.png',
         tech: 'JavaScript',
@@ -12,7 +20,7 @@ export const ProjectCard = () => {
         github: 'https://github.com/PaulGarrod/UKCovidData',
         website: 'https://uk-covid-data.netlify.app/'
     }, {
-        title: 'To Do Application',
+        title: 'To Do App',
         image: 'todoAppNoBG.png',
         tech: 'JQuery',
         readMe: 'Using JQuery to create the application, which allows for CRUD functionality of users To Do\'s. Integrated Local Storage allowing users To Do Lists to be stored. Additional features include a flagged feature, a reorder feature and delete all feature. Flagged feature allows users to toggle an items importance on and off. Reorder feature allows users to bring their flagged items to the top of the list.',
@@ -39,13 +47,15 @@ export const ProjectCard = () => {
 
     const titleArray = project.map(i => i.title);
 
-    const [title, setTitle] = useState('Paul Garrod\'s Portfolio');
-    const [tech, setTech] = useState('Built using React');
-    const [readMe, setReadMe] = useState('Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display each project. Additional projects to be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others.');
-    const [desc, setDesc] = useState('Using React create a simple yet effective portfolio.');
+    const [title, setTitle] = useState(project[0].title);
+    const [tech, setTech] = useState(project[0].tech);
+    const [readMe, setReadMe] = useState(project[0].readMe);
+    const [desc, setDesc] = useState(project[0].desc);
     const [website, setWebsite] = useState(null);
-    const [github, setGithub] = useState('https://github.com/PaulGarrod/portfolio-react');
-    const [image, setImage] = useState('#');
+    const [github, setGithub] = useState(project[0].github);
+    const [image, setImage] = useState(project[0].image);
+
+    const [isActive, setIsActive] = useState();
     
     const handleClick = (e) => {
         const index = project.findIndex(i => i.title === e.target.innerHTML);
@@ -58,23 +68,23 @@ export const ProjectCard = () => {
         setImage(project[index].image);
     }
 
+
     return (
     <div className="project-card-container">
         <aside className="project-card-title">
         {titleArray.map((i) => (
-            <button className="font-med" onClick={handleClick}>{i}</button>
+            <button className="button-large-light font-med btn" onClick={handleClick}>{i}</button>
             ))}
         </aside>
         
         <article className="project-card-display">
             <h1>{title}</h1>
-            <h2>{tech}</h2>
-            <a href={github}>Show me the Code!</a>
-            {website !== null && (
+            <h2>Created using {tech}</h2>
+            <a class="project-card-display-link btn button-small font-bold" href={github} target="_blank">Show the Code!</a>
+            <a class="project-card-display-link btn button-small font-bold" href={website} target="_blank">Show the Website!</a>
             <a href={website} target="_blank">
                 <img className="project-card-display-image" src={`images/projects/${image}`}/>
             </a>
-            )}
             <h3>Brief:</h3>
             <p>{desc}</p>
             <h3>Read Me:</h3>

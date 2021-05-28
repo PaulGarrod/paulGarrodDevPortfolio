@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.project-card-title button {
+.button-large-light {
     background-color: inherit;
     border: 0.5px solid #002447;
     border-radius: 8px;
@@ -20,10 +20,34 @@
     cursor: pointer;
 }
 
-.project-card-display a {
+.button-small {
+    background-color: inherit;
+    border: 0.5px solid #002447;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin: 15px 5px;
+    height: 25px;
+    font-family: Bad Script;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: 0.4s;
+    background-color: #002447;
+    border: 0.5px solid #002447;
+    color: #fbeceb;
+    font-weight: normal;
+}
+
+.project-card-display-link {
     color: inherit;
     text-decoration: none;
-    display: block;
+    display: inline-block;
+    margin: 15px;
+}
+
+.project-card-display a {
+cursor: pointer;
 }
 
 .project-card-display p {
@@ -33,7 +57,6 @@
 .project-card-display img {
     width: 100%;
     height: auto;
-    cursor: pointer;
 }
 
 .project-card-display h1 {
