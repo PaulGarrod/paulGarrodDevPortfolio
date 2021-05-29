@@ -17,6 +17,7 @@
 }
 
 .header-button {
+    transition: ease-in 0.4s;
     background-color: inherit;
     color: #feb249;
     border: 0.5px solid#feb249;
@@ -26,6 +27,13 @@
     height: 55px;
     font-family: Bad Script;
     cursor: pointer;
+}
+
+.header-button:hover {
+    transition: 0.4s;
+    background-color: #feb249;
+    color: #002447;
+    font-weight: bold;
 }
 
 .header-right {
@@ -62,9 +70,15 @@
 }
 
 .header-icons i {
+    transition: ease-in 0.4s;
     font-size: 3em;
     margin: 15px;
     color: orange;
+}
+
+.header-icons i:hover {
+    transition: ease-in 0.4s;
+    font-size: 4em;
 }
 
 @media (max-width: 850px){
