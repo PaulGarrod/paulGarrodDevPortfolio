@@ -9,7 +9,7 @@ export const ProjectCard = () => {
         tech: 'React',
         readMe: 'Created without the need of a navigation menu, the header component renders Paul\'s contact information or Paul\'s about me at the click of a button. Links to Paul\'s socials and a resume download are included in both components for easy use. Below the header is the Project Display Area, which alters the components state to display each project. Additional projects to be added upon completion. Currently working on a \'Divers Guide for Koh Tao\' and \'Js for Kids\' amongst others.',
         desc: 'Using React create a simple yet effective portfolio.',
-        github: 'https://github.com/PaulGarrod/portfolio-react',
+        github: 'https://github.com/PaulGarrod/paulGarrodDevPortfolio',
         website: null
     },{
         title: 'UK Covid Data',
@@ -33,7 +33,7 @@ export const ProjectCard = () => {
         tech: 'JavaScript',
         readMe: 'Fetch API utilized to access the Weather DB data. Default city is set to Wellington, NZ. Search bar allows you to discover the weather in any city worldwide right now, results displayed with additional information, including temperature, fells like temperature and wind speed. Image displayed will always correspond to the weather description returned by the search results.',
         desc: 'Create a weather search website which uses live data.',
-        github: 'https://github.com/PaulGarrod/weatherApp2',
+        github: 'https://github.com/PaulGarrod/weatherSearch',
         website: 'https://current-weather-search.netlify.app/'
     }, {
         title: 'Reddit Clone',
