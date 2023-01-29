@@ -6,4 +6,4 @@ Project section utilizes a side bar navigation with buttons which update the com
 
 Layout and responsive design is created using CSS Grid and CSS Flexbox, adjusting the design through media queries to give optimal user experience. 
 
-Hosted online - www.paulgarrod.dev
+www.paulgarrod.dev - no longer hosted
